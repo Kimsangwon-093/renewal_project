@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7b7b7b;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px 10px 10px 50px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  background-image: url('../../img/meerkat.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: right 0 bottom 0;
+}
+
+.header-title {
+  padding: 20px;
+  background-color: #4d6768;
+  color: #fff;
+  text-align: center;
+}
+.sub-title {
+  margin: 20px 0;
+  text-align: center;
+  font-style: italic;
+}
+.contents-title {
+  color: #ff0000;
+}

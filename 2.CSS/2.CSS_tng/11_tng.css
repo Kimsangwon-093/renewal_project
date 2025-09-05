@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+.fieldset-bg-img {
+  background-image: url('../../img/linux.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* .fieldset-bg-img {
+  position: relative;
+}
+
+.fieldset-bg-img::after {
+  background-image: url('../../img/linux.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+} */
+
+.legend-title {
+  color: #ff00ff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.required-sign::before {
+  content: '*';
+  color: #ff0000;
+}
+
+.input-box {
+  margin-bottom: 10px;
+}
+
+.txa-request-memo {
+  width: 200px;
+  height: 120px;
+}
+
+label {
+  vertical-align: top;
+}
+
+input, textarea {
+  background: none;
+}
+
+.focus-border:focus {
+  border: 3px solid #ff0000;
+  outline: none;
+}
+
+.chk-color:checked + label {
+  color: #ff0000;
+}
+
+/* .btn-submit {
+  position: relative;
+} */
+
+.btn-submit:hover::after {
+  content: '내용을 다시 한 번 확인해 주세요.';
+  position: absolute;
+  width: 300px;
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  top: 0;
+  left: 60px;
+}
