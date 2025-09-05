@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07_formTag</title>
+</head>
+<body>
+  <!-- form 태그 : 정보를 제출하기 위해 범위를 지정하는 역할 -->
+  <form>
+    <fieldset>
+      <legend>연습</legend>
+      <!-- input 태그 : 데이터를 입력 받는 태그 -->
+      <label for="email">이메일 : </label>
+      <!-- <input type="text" name="email" id="email" placeholder="email을 적어주세요."> -->
+      <input type="email" name="email" id="email" placeholder="email을 적어주세요." required>
+      <br>
+      <label for="password">비밀번호 : </label>
+      <input type="password" name="password" id="password" minlength="8">
+    </fieldset>
+    <fieldset>
+      <input type="number" min="1" max="5">
+      <input type="date">
+      <br>
+      <input type="checkbox" name="foods" id="banana" checked>
+      <label for="banana" value="banana">바나나</label>
+      <input type="checkbox" name="foods" id="apple">
+      <label for="apple" value="apple">사과</label>
+      <br>
+      <input type="radio" name="animals" id="dog">
+      <label for="dog">강아지</label>
+      <input type="radio" name="animals" id="cat">
+      <label for="cat">고양이</label>
+      <br>
+      <select name="poketmon" id="poketmon">
+        <option value="0">피카츄</option>
+        <option value="1">라이츄</option>
+        <option value="2" selected>파이리</option>
+      </select>
+      <br>
+      <input type="hidden" name="test" value="0">
+      <br>
+      <textarea name="" id="" cols="10" rows="10"></textarea>
+    </fieldset>
+    <button type="submit">전송</button>
+    <button type="reset">초기화</button>
+    <button type="button">버튼</button>
+  </form>
+</body>
+</html>
