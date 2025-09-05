@@ -1,0 +1,15 @@
+h1 {
+  color: brown !important;
+}
+
+#id-h1 {
+  color: aqua;
+}
+
+.class-h1 {
+  color: yellow;
+}
+
+h1 {
+  color: blue;
+}

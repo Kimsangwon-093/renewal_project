@@ -1,0 +1,49 @@
+div {
+  padding: 20px;
+}
+
+.main {
+  background-color: #800080;
+  width: 200px;
+}
+
+.div-static {
+  background-color: #fff;
+  border: 1px solid #000;
+  position: static;
+}
+.div-relative {
+  background-color: #7fffd4;
+  /* 기본적으로 요소 배치 기준이 static 같다. */
+  /* 자신의 원래 위치를 기준으로 위치 지정이 가능 */
+  /* 자식요소들 중 absolute로 지정된 요소가 있다면, relative요소가 기준점이 됨 */
+  position: relative;
+  /* top: 20px; */
+  bottom: 20px;
+  left: 20px;
+}
+
+.div-absolute {
+  background-color: chocolate;
+  /* 나의 상위요소 중 relative가 지정된 요소를 기준으로 움직인다. */
+  /* 상위 요소 중 relative가 없으면, body가 기준 */
+  position: absolute;
+  top: 0;
+}
+.div-fixed {
+  background-color: crimson;
+  /* 뷰포트를 기준으로 특정위치를 지정 */
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+.div-sticky {
+  background-color: beige;
+  /* 자신의 위치가 화변 밖으로 벗어날 경우, 지정한 위치에 고정되어 표시 */
+  position: sticky;
+  top: 0;
+}
+/* z-index : 요소의 배치 순서를 결정하는 속성 */
+.div-z-index-3 {
+  z-index: 3;
+}

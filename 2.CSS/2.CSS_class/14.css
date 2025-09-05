@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 150px;
+  height: 15vh;
+  background-color: skyblue;
+  border: 1px solid #000;
+}
+
+.container-row {
+  /* flex box는 부모요소에 `display: flex` 속성을 지정해서 사용 */
+  display: flex;
+  /* 주축의 방향을 지정하는 속성 */
+  /* flex-direction: row; */
+  /* 항목의 줄을 바꿀지 여부를 지정 */
+  /* flex-wrap: wrap; */
+
+  /* flex-direction과 flex-wrap을 한번에 지정 */
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.container-sort {
+  height: 200px;
+  background-color: rgb(73, 0, 142);
+  padding: 5px 0;
+  display: flex;
+  /* 주축 기준 정렬 */
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+
+  /* 교차축 기준 정렬 */
+  /* align-content: space-around; */
+
+  /* 아이템 위치를 개별적으로 조정하는 교차축 기준 정렬 */
+  align-items: baseline;
+}
+
+.container-sort > .item {
+  width: 80px;
+  height: 50px;
+}
+
+.container-sort > .item:nth-child(2) {
+  line-height: 70px;
+}
+
+.container-sort > .item:nth-child(4) {
+  /* 교차축 기준 특정 아이템만 정렬 */
+  align-self: flex-end;
+}

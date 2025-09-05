@@ -1,0 +1,33 @@
+.background-test1 {
+  padding: 10px;
+  background-color: #6495ed;
+  border: 3px dotted #000;
+  background-clip: content-box;
+}
+.div-background-img {
+  width: 1000px;
+  height: 1000px;
+  border: 3px solid red;
+  /* 배경을 이미지로 지정 */
+  background: url('../img/meerkat.jpg');
+  /* 배경 이미지의 크기 조절 */
+  background-size: 220px;
+  /* 배경 이미지의 반복 방법 조절 */
+  background-repeat: no-repeat;
+  /* 배경 이미지 위치를 조절 */
+  background-position: top 0 right 0;
+}
+
+body {
+  background-image: url('../img/linux.png');
+  /* 스크롤이 생길경우 요소의 배경 이미지를 고정 */
+  background-attachment: fixed;
+}
+.div-gradation {
+  width: 500px;
+  height: 200px;
+  /* 선형 그라데이션 */
+  /* background: linear-gradient(45deg, #000, #fff 20%, #000fff); */
+  /* 원형 그라데이션 */
+  background: radial-gradient(circle at 0% 50%, #000, #fff, #000fff);
+}

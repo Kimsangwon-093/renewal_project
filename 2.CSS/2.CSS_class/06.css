@@ -1,0 +1,63 @@
+/* 
+블럭 레벨 요소
+1. 혼자 한줄 다차지 한다.
+2. 크기를 조절해서 위로 올라갈 공간이 충분한것처럼 보이나, 올라가지 않는다.
+3. 크기 조절은 가능하다.
+
+인라인 레벨 요소
+1. 콘텐츠 크기만큼만 크기가 고정된다.
+2. 크기 조절이 안된다.
+3. 공간이 충분하면 위로 올라온다.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+}
+
+.div {
+  border: 1px solid #000;
+}
+
+.div-box, h1 {
+  padding: 20px;
+  width: 100px;
+  border: 1px solid #e84d4d;
+}
+
+span {
+  display: inline-block;
+  width: 100vw;
+  height: 50vh;
+  padding: 5px;
+}
+
+/* 
+  vw, vh (뷰포트기준 단위) : 뷰의 크기에 따라 비율로 설정 단위
+  % : 부모요소의 크기에 따라 비율로 설정 단위
+*/
+.div-parent {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.div-child {
+  border: 1px solid #e84d4d;
+  width: 50vw;
+  min-width: 400px;
+}
+
+.div-margin {
+  margin: 20px;
+  background-color: #e84d4d;
+  /* 
+    수평거리, 수직거리, 흐림정도, 번짐정도, 색상, 그림자 방향
+  */
+  box-shadow: 1px 1px 1px 1px #000 inset;
+}

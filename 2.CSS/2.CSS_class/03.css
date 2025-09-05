@@ -1,0 +1,49 @@
+html {
+  /* font-size: 2px; */
+}
+body {
+  /* font-family : 글꼴을 지정하는 속성 */
+  /* font-family: "Black Han Sans", sans-serif; */
+  font-family: '궁서체', '맑은 고딕', '바탕';
+
+  /* font-weight : 글자의 굵기를 지정하는 속성 ( 100 ~ 900 ) */
+  font-weight: 400;
+  font-style: normal;
+
+  /* font-size : 글자의 크기를 지정하는 속성 */
+  /* px : 픽셀 단위로 폰트 크기를 조절 */
+  /* em : 부모요소 기준으로 글자 크기를 배율로 조절 */
+  /* rem : 최상위 요소를 기준으로 글자 크기를 배율로 조절 */
+  font-size: 1.5rem;
+}
+
+p {
+  /* color : 폰트 색상 설정 */
+  color: #e37272;
+
+  /* text-decoration : 선으로 텍스트를 꾸미는 속성 */
+  text-decoration: line-through;
+
+  /* text-align : 텍스트의 정렬 방향 지정 */
+  text-align: center;
+}
+
+.box-line-height {
+  background-color: blanchedalmond;
+  height: 100px;
+  /* line-height : 줄간격 조절 */
+  line-height: 16px;
+  /* letter-spacing : 자간 조절 */
+  letter-spacing: 5px;
+  /* word-spacing : 단어 간의 간격 조절 */
+  word-spacing: 20px;
+}
+
+.class-text-transform {
+  /* text-transform : 영어 대소문자 출력 변환 */
+  text-transform: capitalize;
+
+  /* text-shadow : 글자의 그림자 효과를 부여 */
+  /* 가로위치, 세로위치, 그림자 크기, 색상 */
+  text-shadow: 20px 15px 5px #e37272;
+}
